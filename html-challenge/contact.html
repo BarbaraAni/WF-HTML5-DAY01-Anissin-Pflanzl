@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8">
+	<title>Kontakt-Formular</title>
+</head>
+<body>
+	<h1>Kontaktieren Sie uns!</h1>
+	<form>
+		<p>Anrede: <input type="radio" name="salutation" value="m" required>Herr
+			<input type="radio" name="salutation" value="f">Frau
+			<input type="radio" name="salutation" value="x">keine Angabe </p>
+		<p>Vorname: <input type="text" name="firstname" required></p>
+		<p>Nachname: <input type="text" name="lastname" required></p>
+		<p>Alter: <select name="age">                                
+		      <option value="18-25">18-25</option>
+		      <option value="26-35" selected>26-35</option>                                
+		      <option value="36-45">36-45</option>
+		      <option value="46-55">46-55</option>
+		  </select>
+		</p> 
+		<p><b>Grund für Kontakt:</b><br>
+		<input type="checkbox" name="reason" value="unhappy">Unzufrieden<br>
+		<input type="checkbox" name="reason" value="better">Besserungsvorschläge<br>
+		<input type="checkbox" name="reason" value="happy" checked>Lob<br>
+		<input type="checkbox" name="reason" value="critic">Kritik<br>
+		<input type="checkbox" name="reason" value="reclam">Reklamationen<br>
+		</p>
+		<p> Nachricht: <br>
+		<textarea name="message" rows="10" cols="30" required></textarea></p>
+		<input type="submit" value="Senden">
+	</form>
+</body>
+</html>
